@@ -26,7 +26,7 @@ function App() {
     setLoading(true);
 
     try {
-      const response = await axios.post("http://localhost:5000/api/chat", {
+      const response = await axios.post("https://chatbot-test-83tq.onrender.com/api/chat", {
         messages: newHistory
       });
 
