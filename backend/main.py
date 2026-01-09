@@ -18,6 +18,9 @@ SYSTEM_INSTRUCTION = {
     "role": "system",
     "content": os.getenv("INSTRUCT")
 }
+@app.route("/")
+def home():
+    return jsonify({"Success":"OK"})
 
 @app.route("/api/chat", methods=["POST"])
 def chat():
